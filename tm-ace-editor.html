@@ -1,0 +1,34 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`tm-ace-editor`
+Polymer web component to encapsulate the ACE code editor
+
+@demo demo/index.html 
+-->
+
+<dom-module id="tm-ace-editor">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'tm-ace-editor',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'tm-ace-editor',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
