@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title>tm-ace-editor demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+    <link rel="import" href="../tm-ace-editor.html">
+
+    <style is="custom-style" include="demo-pages-shared-styles">
+      tm-ace-editor {width:800px;height:400px}
+    </style>
+  </head>
+  <body>
+
+    <div>
+      <h3>tm-ace-editor Demo</h3>
+      <tm-ace-editor>
+        <pre>
+function foo(items) {
+  var i;
+  for (i = 0; i &lt; items.length; i++) {
+      alert("Ace Rocks " + items[i]);
+  }
+}
+        </pre>
+      </tm-ace-editor>
+    </div>
+
+  </body>
+</html>
