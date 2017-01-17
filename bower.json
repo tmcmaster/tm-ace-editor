@@ -3,7 +3,8 @@
   "description": "Polymer web component to encapsulate the ACE code editor",
   "main": "tm-ace-editor.html",
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.4.0"
+    "polymer": "Polymer/polymer#^1.4.0",
+    "paper-code-mirror": "AKHXtern/paper-code-mirror"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",

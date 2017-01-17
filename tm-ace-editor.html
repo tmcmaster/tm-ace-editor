@@ -1,5 +1,3 @@
-<link rel="import" href="bower_components/polymer/polymer.html">
-
 <!--
 `tm-ace-editor`
 Polymer web component to encapsulate the ACE code editor
@@ -43,15 +41,19 @@ Polymer web component to encapsulate the ACE code editor
           },
         },
         ready: function() {
+          var testString = '<html><head>\n</head><body></body></html>';
+          console.log(testString);
           var content = this.getContentChildren('#content')[0];
           var code = content.innerHTML;
-          code = code.replace('&lt;', '<');
+          //code = code.replace('&lt;', '<');
+          var beautiful = ace.require("ace/ext/beautify");
           this.editor = ace.edit("editor");
           this.editor.setTheme("ace/theme/twilight");
-          this.editor.session.setMode("ace/mode/javascript");
-          this.setCode(code);
+          this.editor.session.setMode("ace/mode/html");
+          this.setCode(testString);
         },
         setCode: function(code) {
+          console.log(code);
           this.editor.session.setValue(code);
         }
       });
